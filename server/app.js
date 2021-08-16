@@ -33,27 +33,18 @@ app.locals.layout = false;
 const commonIndex = (req, res) => {
   return res.render('index', {
     seo: {
-      title: 'Nedii',
-      og_title: 'Nedii',
-      og_description: 'Nedii',
+      title: 'Maestria Interna',
+      og_title: 'maestria-interna',
+      og_description: 'maestria-interna',
       img_og_picture: '/assets/seo.jpg',
-      og_site_name: 'Nedii',
+      og_site_name: 'maestria-interna',
       url: '/',
-      keywords: 'Nedii,expo,stands,negocios'
+      keywords: 'maestria-interna'
     }
   });
 };
 
 app.get('/', commonIndex);
-app.get('/changelog', commonIndex);
-app.get('/about', commonIndex);
-app.get('/create-account', commonIndex);
-app.get('/login', commonIndex);
-app.get('/my-account', commonIndex);
-app.get('/activate/:token', commonIndex);
-app.get('/expos', commonIndex);
-app.get('/expos/:expoId', commonIndex);
-app.get('/expos/:expoId/:groupId', commonIndex);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}!`);
