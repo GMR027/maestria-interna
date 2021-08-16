@@ -2,6 +2,10 @@
 @import 'src/constants/Constants.scss';
 
 .Text {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  
   &__info {
     font-size: $regular-text;
     padding-top: 2em;
