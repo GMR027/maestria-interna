@@ -43,7 +43,7 @@ const NavBar = (): React.ReactElement => {
             </Link>
             <a href='#'
               data-target='mobile-demo'
-              className='sidenav-trigger cyan-text'>
+              className='sidenav-trigger grey-text text-darken-4'>
               <i className='material-icons'>menu</i>
             </a>
             <ul id='nav-mobile' className='right hide-on-med-and-down Menu'>

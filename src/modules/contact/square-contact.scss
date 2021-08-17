@@ -1,0 +1,36 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.Contact {
+  &__row {
+    margin: 0 !important;
+  }
+}
+
+.SquareContact{
+  &__item {
+    min-height: 20vh;
+    padding: 1em;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+    @extend .z-depth-1;
+  }
+
+  &__item:hover {
+    @extend .z-depth-3;
+    transition: 0.5s;
+  }
+
+  &__icon i{
+    font-size: $icons-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  &__text {
+    margin-bottom: 1em;
+  }
+}
