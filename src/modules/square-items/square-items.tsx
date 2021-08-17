@@ -35,7 +35,7 @@ const SquareItems = (): React.ReactElement => {
             <Square
               image={portalURL}
               title='Portal MI Edu.'
-              link='/capacitacion'/>
+              link='/portal'/>
           </div>
         </div>
       </div>
