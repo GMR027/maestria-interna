@@ -10,6 +10,7 @@ import store, { persistor } from 'src/redux/store';
 import Home from 'src/pages/home/home';
 import EnvironmentVariables from 'src/constants/EnvironmentVariables';
 import Capacitacion from 'src/pages/capacitacion/capacitacion';
+import Portal from 'src/pages/portal/portal';
 
 const env = EnvironmentVariables.getInstance();
 const isMobileApp = env.isMobileApp;
@@ -18,6 +19,11 @@ const Routes = (): React.ReactElement => {
   return (
     <Router forceRefresh={!isMobileApp}>
       <Switch>
+        <Route path='/portal'>
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}><Portal /></PersistGate>
+          </Provider>
+        </Route>
         <Route path='/capacitacion'>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}><Capacitacion /></PersistGate>
