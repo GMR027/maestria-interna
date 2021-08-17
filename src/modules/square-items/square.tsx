@@ -6,7 +6,7 @@ const Square = (props: any): React.ReactElement => {
   return (
     <Link
       className='Square'
-      to='/'>
+      to={props.link}>
       <div className='Square__card'>
         <div className='Square__section'>
           <div

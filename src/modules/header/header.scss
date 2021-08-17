@@ -8,7 +8,6 @@
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 50vh;
-    position: absolute;
   }
 
   &__img {
@@ -19,18 +18,61 @@
     background-repeat: no-repeat;
   }
 
-  &__title {
-    font-size: $super-title;
+  &__text {
+    width: 100%;
+    height: 4em;
     position: relative;
-    top: -35vh;
+    margin: auto;
+    top: 20vh;
+  }
+
+  &__title {
+    font-size: 3em;
+    text-align: center;
   }
 
   &__line {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 5px solid #ffc107 ;
+  }
+}
+
+.MediumParallax {
+  height: 20vh;
+
+  &__black {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 20vh;
+  }
+
+  &__img {
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    width: 100%;
+    height: 4em;
     position: relative;
-    top: -35vh;
+    margin: auto;
+    top: 5vh;
+  }
+
+  &__title {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  &__line {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 5px solid #ffc107 ;
   }
 }

@@ -5,20 +5,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 30vh;
 
 
   &__black {
     background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    min-height: 30vh;
+    position: relative;
+    height: 100%;
     width: 100%;
   }
 
   &__text {
     position: relative;
-    top: 2vh;
     text-align: center;
     font-size: $regular-text;
+    padding: 2em;
   }
 }

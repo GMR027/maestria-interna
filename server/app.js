@@ -44,6 +44,7 @@ const commonIndex = (req, res) => {
   });
 };
 
+app.get('/capacitacion', commonIndex);
 app.get('/', commonIndex);
 
 app.listen(port, () => {

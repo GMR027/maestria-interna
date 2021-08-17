@@ -9,6 +9,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from 'src/redux/store';
 import Home from 'src/pages/home/home';
 import EnvironmentVariables from 'src/constants/EnvironmentVariables';
+import Capacitacion from 'src/pages/capacitacion/capacitacion';
 
 const env = EnvironmentVariables.getInstance();
 const isMobileApp = env.isMobileApp;
@@ -17,6 +18,11 @@ const Routes = (): React.ReactElement => {
   return (
     <Router forceRefresh={!isMobileApp}>
       <Switch>
+        <Route path='/capacitacion'>
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}><Capacitacion /></PersistGate>
+          </Provider>
+        </Route>
         <Route path='/'>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}><Home /></PersistGate>

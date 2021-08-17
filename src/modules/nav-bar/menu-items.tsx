@@ -12,7 +12,7 @@ const MenuItems = ( props: any ): React.ReactElement => {
       </li>
       <li>
         <Link
-          to='/expos'
+          to='/capacitacion'
           className='grey-text text-darken-3'>
           Capacitación
         </Link>
