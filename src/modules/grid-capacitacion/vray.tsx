@@ -23,19 +23,22 @@ const SquareVray = (): React.ReactElement => {
             <Square
               image={vr3dsmaxURL}
               title='Vray para 3ds Max'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={vrrhinoURL}
               title='Vray para Rhino'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={vrskpURL}
               title='Vray para Sketchup'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
         </div>
       </div>

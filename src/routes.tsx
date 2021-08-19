@@ -12,6 +12,7 @@ import EnvironmentVariables from 'src/constants/EnvironmentVariables';
 import Capacitacion from 'src/pages/capacitacion/capacitacion';
 import Portal from 'src/pages/portal/portal';
 import Consultoria from 'src/pages/consultoria/consultoria';
+import TresDmax from 'src/pages/tresDmax/tresDmax';
 
 const env = EnvironmentVariables.getInstance();
 const isMobileApp = env.isMobileApp;
@@ -20,6 +21,11 @@ const Routes = (): React.ReactElement => {
   return (
     <Router forceRefresh={!isMobileApp}>
       <Switch>
+        <Route path='/tresDmax'>
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}><TresDmax /></PersistGate>
+          </Provider>
+        </Route>
         <Route path='/consultoria'>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}><Consultoria /></PersistGate>

@@ -21,13 +21,15 @@ const SquareMcTrimble = (): React.ReactElement => {
             <Square
               image={rhinoURL}
               title='Rhinoceros'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={sketchupURL}
               title='Sketchup'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
         </div>
       </div>

@@ -25,37 +25,43 @@ const SquareAutodesk = (): React.ReactElement => {
             <Square
               image={revitURL}
               title='Revit Architecture'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={revitURL}
               title='Revit Estructural'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={revitURL}
               title='Revit Mep'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={trsmaxURL}
               title='3ds Max'
-              link='/capacitacion'/>
+              link='/tresDmax'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={infraworksURL}
               title='Infraworks'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
           <div className='col s12 m4'>
             <Square
               image={sketchbookURL}
               title='Sketchbook'
-              link='/capacitacion'/>
+              link='/capacitacion'
+              text='Clic para más información'/>
           </div>
         </div>
       </div>

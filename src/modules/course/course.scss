@@ -1,0 +1,26 @@
+ @import 'materialize-css';
+ @import 'src/constants/Constants.scss';
+
+ .section-information {
+   border-radius: 10px;
+ }
+
+
+ .title-info {
+   font-size: $subtitle-font-size;
+   font-weight: $subtitle-title-font-weight;
+   text-align: center;
+ }
+
+ .text-info {
+   text-align: center;
+   font-size: $medium-text;
+ }
+
+ .boton-temarios {
+   padding: 2.5em;
+   text-align: center;
+   .text-boton{
+     font-size: $subtitle-title-cards;
+   }
+ }

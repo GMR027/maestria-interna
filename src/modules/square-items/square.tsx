@@ -15,7 +15,7 @@ const Square = (props: any): React.ReactElement => {
           </div>
           <div className='Square__title grey-text text-darken-4'>{props.title}</div>
           <div className='Square__text grey-text'>
-            <p>Clic para más información</p>
+            <p>{props.text}</p>
           </div>
         </div>
       </div>
