@@ -2,7 +2,7 @@ import React from 'react';
 import SystemCheck from 'src/modules/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import Footer from 'src/modules/footer/footer';
-import MeiumParallax from 'src/modules/header/medium-parallax';
+import MediumParallax from 'src/modules/header/medium-parallax';
 import { useSelector } from 'react-redux';
 import SectionText from 'src/modules/section-text/section-text';
 import SquareAutodesk from 'src/modules/grid-capacitacion/autodesk';
@@ -18,7 +18,7 @@ const Capacitacion = (): React.ReactElement => {
   return (
     <>
       <NavBar/>
-      <MeiumParallax
+      <MediumParallax
         image={headerPictureURL}
         title='CAPACITACIÓN'/>
       <SectionText text='Seleccione el software de acuerdo al fabricante para tener más información al respecto con nuestros cursos.'/>

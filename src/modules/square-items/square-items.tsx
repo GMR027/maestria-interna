@@ -29,7 +29,7 @@ const SquareItems = (): React.ReactElement => {
             <Square
               image={consultoriaURL}
               title='Consultoría'
-              link='/capacitacion'/>
+              link='/consultoria'/>
           </div>
           <div className='col s12 m4'>
             <Square

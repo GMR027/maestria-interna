@@ -17,6 +17,20 @@ const MenuItems = ( props: any ): React.ReactElement => {
           Capacitación
         </Link>
       </li>
+      <li>
+        <Link
+          to='/consultoria'
+          className='grey-text text-darken-3'>
+          Consultoría
+        </Link>
+      </li>
+      <li>
+        <Link
+          to='/portal'
+          className='grey-text text-darken-3'>
+          Portal
+        </Link>
+      </li>
     </>
   );
 };

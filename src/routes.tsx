@@ -11,6 +11,7 @@ import Home from 'src/pages/home/home';
 import EnvironmentVariables from 'src/constants/EnvironmentVariables';
 import Capacitacion from 'src/pages/capacitacion/capacitacion';
 import Portal from 'src/pages/portal/portal';
+import Consultoria from 'src/pages/consultoria/consultoria';
 
 const env = EnvironmentVariables.getInstance();
 const isMobileApp = env.isMobileApp;
@@ -19,6 +20,11 @@ const Routes = (): React.ReactElement => {
   return (
     <Router forceRefresh={!isMobileApp}>
       <Switch>
+        <Route path='/consultoria'>
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}><Consultoria /></PersistGate>
+          </Provider>
+        </Route>
         <Route path='/portal'>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}><Portal /></PersistGate>
