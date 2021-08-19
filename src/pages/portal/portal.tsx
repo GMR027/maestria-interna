@@ -2,7 +2,7 @@ import React from 'react';
 import SystemCheck from 'src/modules/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import Footer from 'src/modules/footer/footer';
-import MeiumParallax from 'src/modules/header/medium-parallax';
+import MediumParallax from 'src/modules/header/medium-parallax';
 import { useSelector } from 'react-redux';
 import SectionText from 'src/modules/section-text/section-text';
 import SectionPortal from 'src/modules/portal/section-portal';
@@ -18,7 +18,7 @@ const Portal = (): React.ReactElement => {
   return (
     <>
       <NavBar/>
-      <MeiumParallax
+      <MediumParallax
         image={headerPortalURL}
         title='Portal MI'/>
       <SectionText text='Bienvenido a tu portal educativo MI. En este portal encontraras toda la información necesaria para tu formación en tu curso contratado.'/>

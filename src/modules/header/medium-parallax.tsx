@@ -1,7 +1,7 @@
 import React from 'react';
 import 'src/modules/header/header.scss';
 
-const MeiumParallax = (props: any): React.ReactElement => {
+const MediumParallax = (props: any): React.ReactElement => {
   return (
     <div className='MediumParallax'>
       <div
@@ -18,4 +18,4 @@ const MeiumParallax = (props: any): React.ReactElement => {
   );
 };
 
-export default MeiumParallax;
+export default MediumParallax;
